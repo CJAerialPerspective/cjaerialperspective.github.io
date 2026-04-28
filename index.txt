@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CJ Aerial Perspective</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #f8f8f8;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #0d3b66;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 6s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* HERO CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+/* LOGO STYLE */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.logo .cj {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.logo .text {
+  text-align: left;
+}
+
+.logo .aerial {
+  letter-spacing: 6px;
+  font-size: 1.4rem;
+}
+
+.logo .perspective {
+  letter-spacing: 4px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+
+.section h2 {
+  color: #0d3b66;
+}
+
+.services p {
+  margin: 5px 0;
+}
+
+/* CONTACT */
+.contact a {
+  color: #0d3b66;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin-right: 15px;
+}
+
+/* FOOTER */
+footer {
+  background: #0d3b66;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="hero">
+
+  <!-- HERO MAIN -->
+  <div class="slide active" style="background-image: url('images/church-hero1.jpg');">
+    <div class="hero-content">
+      <div class="logo">
+        <div class="cj">CJ</div>
+        <div class="text">
+          <div class="aerial">AERIAL</div>
+          <div class="perspective">PERSPECTIVE</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="slide" style="background-image: url('images/church-hero2.jpg');"></div>
+  <div class="slide" style="background-image: url('images/church-hero3.jpg');"></div>
+  <div class="slide" style="background-image: url('images/church-hero4.jpg');"></div>
+  <div class="slide" style="background-image: url('images/church-hero5.jpg');"></div>
+
+  <!-- COMING SOON -->
+  <div class="slide" style="background-image: url('images/sandbanks-placeholder.jpg');">
+    <div class="hero-content">
+      <p>Sandbanks Properties — Coming Soon</p>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image: url('images/urbanreef-placeholder.jpg');">
+    <div class="hero-content">
+      <p>Urban Reef Boscombe — Coming Soon</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+  <h2>About</h2>
+  <p>
+    Professional drone photography and videography across Bournemouth and the surrounding areas.
+    Capturing property, venues, and landscapes with precision, clarity, and impact.
+  </p>
+</div>
+
+<!-- SERVICES -->
+<div class="section services">
+  <h2>Services</h2>
+  <p>Commercial Drone Photography</p>
+  <p>Event & Venue Coverage</p>
+  <p>Promotional Videography</p>
+  <p>Custom Projects</p>
+</div>
+
+<!-- CONTACT -->
+<div class="section contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:carl@cjaerialperspective.co.uk">carl@cjaerialperspective.co.uk</a></p>
+  <p>Phone: <a href="tel:07548755785">07548 755785</a></p>
+
+  <div class="social-links">
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">LinkedIn</a>
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 CJ Aerial Perspective
+</footer>
+
+<script>
+let slides = document.querySelectorAll('.slide');
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove('active');
+  index = (index + 1) % slides.length;
+  slides[index].classList.add('active');
+}, 5000);
+</script>
+
+</body>
+</html>
