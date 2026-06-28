@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+html_content = '''<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -743,8 +744,8 @@ footer {
       </div>
       <p class="tagline">Aerial Roof Surveys & Property Insight</p>
       <p class="hero-sub">Supporting estate agents, landlords, and property professionals with clear, contractor-aware aerial reporting.</p>
-      <p class="hero-cred">£5M Insured • Professional Imaging • Certification In Progress</p>
-      <p class="hero-location">Based in Dorset • Working across Bournemouth, Poole & surrounding areas</p>
+      <p class="hero-cred">£5M Insured &bull; Professional Imaging &bull; Certification In Progress</p>
+      <p class="hero-location">Based in Dorset &bull; Working across Bournemouth, Poole & surrounding areas</p>
     </div>
   </div>
 
@@ -789,17 +790,17 @@ footer {
   
   <div class="about-content">
     <div class="about-text">
-      <p>I come from a hands-on property background—years working in the building trades then moving into inventory and property documentation.</p>
+      <p>I come from a hands-on property background&mdash;years working in the building trades then moving into inventory and property documentation.</p>
       
-      <p>Today, I work closely with estate agents, landlords, and property managers across Bournemouth and Poole, providing structured, visual reporting that supports real decisions—not just images.</p>
+      <p>Today, I work closely with estate agents, landlords, and property managers across Bournemouth and Poole, providing structured, visual reporting that supports real decisions&mdash;not just images.</p>
       
-      <p>The difference is context. I don't just capture a roof—I understand what I'm seeing. From early signs of failure to visible installation issues, the focus is always on delivering clear, usable insight.</p>
+      <p>The difference is context. I don\'t just capture a roof&mdash;I understand what I\'m seeing. From early signs of failure to visible installation issues, the focus is always on delivering clear, usable insight.</p>
       
-      <p>This is a natural extension of the work I already do—now adding an aerial perspective where it genuinely adds value.</p>
+      <p>This is a natural extension of the work I already do&mdash;now adding an aerial perspective where it genuinely adds value.</p>
       
       <div class="about-areas">
         <h4>Common Applications</h4>
-        <p>Pre-sale property checks • Landlord condition reporting • Maintenance planning • Contractor support • Post-repair verification</p>
+        <p>Pre-sale property checks &bull; Landlord condition reporting &bull; Maintenance planning &bull; Contractor support &bull; Post-repair verification</p>
       </div>
       
       <p class="trust-line">Working with local estate agents and property professionals across Dorset.</p>
@@ -811,7 +812,7 @@ footer {
         <span class="stat-label">In Progress</span>
       </div>
       <div class="stat">
-        <span class="stat-number">£5M</span>
+        <span class="stat-number">&pound;5M</span>
         <span class="stat-label">Insurance Cover</span>
       </div>
       <div class="stat">
@@ -832,14 +833,14 @@ footer {
     <div class="service-card">
       <span class="service-number">01</span>
       <h3>Roof Surveys for Inventory & Property Reports</h3>
-      <p>Scaffold-free condition documentation. Clear, high-resolution imagery of roof coverings, flashing, skylights, and drainage—delivered in formats that support your existing reports and contractor discussions.</p>
+      <p>Scaffold-free condition documentation. Clear, high-resolution imagery of roof coverings, flashing, skylights, and drainage&mdash;delivered in formats that support your existing reports and contractor discussions.</p>
       <p class="service-tag">No scaffolding. No disruption. No guesswork.</p>
     </div>
     
     <div class="service-card">
       <span class="service-number">02</span>
       <h3>Residential Property Marketing</h3>
-      <p>Aerial photography for estate agents, private sellers, and luxury property marketing across Dorset's premium locations including Sandbanks and the Purbecks.</p>
+      <p>Aerial photography for estate agents, private sellers, and luxury property marketing across Dorset\'s premium locations including Sandbanks and the Purbecks.</p>
     </div>
     
     <div class="service-card">
@@ -968,117 +969,33 @@ footer {
       </div>
     </div>
     
-  <div class="contact-form">
-  <form id="contact-form" action="https://formspree.io/f/mjgdjbel" method="POST">
-    <input type="hidden" name="_subject" value="New CJ Aerial Perspective Enquiry">
-    <input type="hidden" name="website" value="CJ Aerial Perspective">
-    
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <input type="tel" name="phone" placeholder="Your Phone Number" required>
-    <select name="service" required>
-      <option value="">Select Service</option>
-      <option value="inspection">Roof Survey & Inspection</option>
-      <option value="residential">Residential Property Marketing</option>
-      <option value="commercial">Commercial Property</option>
-      <option value="custom">Custom Project</option>
-    </select>
-    <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-    <button type="submit" id="submit-btn">Send Message</button>
-  </form>
-</div>
-
-<!-- Thank You Popup -->
-<div id="thank-you-popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:var(--navy); color:#fff; padding:30px 40px; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.3); z-index:1000; text-align:center; font-family:inherit;">
-  <p style="margin:0; font-size:1.2em;">✅ Thank you for your enquiry!</p>
-  <p style="margin:8px 0 0; font-size:0.9em; opacity:0.8;">I'll review your requirements and get back to you as soon as possible.</p>
-</div>
-
-<script>
-(function() {
-  var form = document.getElementById('contact-form');
-  var button = document.getElementById('submit-btn');
+    <div class="contact-form">
+      <form id="contact-form" action="https://formspree.io/f/mjgdjbel" method="POST">
+        <input type="hidden" name="_subject" value="New CJ Aerial Perspective Enquiry">
+        <input type="hidden" name="website" value="CJ Aerial Perspective">
+        
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <select name="service" required>
+          <option value="">Select Service</option>
+          <option value="inspection">Roof Survey & Inspection</option>
+          <option value="residential">Residential Property Marketing</option>
+          <option value="commercial">Commercial Property</option>
+          <option value="custom">Custom Project</option>
+        </select>
+        <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        <button type="submit" id="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
   
-  if (!form || !button) {
-    console.error('Form or button not found');
-    return;
-  }
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    
-    console.log('Submitting to:', form.action);
-    
-    button.disabled = true;
-    button.textContent = 'Sending...';
-    
-    var data = new FormData(form);
-    
-    fetch(form.action, {
-      method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    }).then(function(response) {
-      console.log('Response status:', response.status);
-      console.log('Response URL:', response.url);
-      
-      button.disabled = false;
-      button.textContent = 'Send Message';
-      
-      if (response.ok) {
-        var popup = document.getElementById('thank-you-popup');
-        popup.style.display = 'block';
-        form.reset();
-        setTimeout(function() {
-          popup.style.display = 'none';
-        }, 3000);
-      } else {
-        alert('Server error ' + response.status + '. Please try again or email directly.');
-      }
-    }).catch(function(error) {
-      console.error('Fetch failed:', error);
-      button.disabled = false;
-      button.textContent = 'Send Message';
-      alert('Connection failed. Please email carl@cjaerialperspective.co.uk directly.');
-    });
-  });
-})();
-</script>
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  var form = this;
-  var button = form.querySelector('button');
-  button.disabled = true;
-  button.textContent = 'Sending...';
-  
-  var data = new FormData(form);
-  
-  fetch(form.action, {
-    method: 'POST',
-    body: data,
-    headers: { 'Accept': 'application/json' }
-  }).then(function(response) {
-    button.disabled = false;
-    button.textContent = 'Send Message';
-    
-    if (response.ok) {
-      var popup = document.getElementById('thank-you-popup');
-      popup.style.display = 'block';
-      form.reset();
-      setTimeout(function() {
-        popup.style.display = 'none';
-      }, 3000);
-    } else {
-      alert('Oops, something went wrong. Please try again.');
-    }
-  }).catch(function() {
-    button.disabled = false;
-    button.textContent = 'Send Message';
-    alert('Oops, something went wrong. Please try again.');
-  });
-});
-</script>
+  <!-- Thank You Popup -->
+  <div id="thank-you-popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:var(--navy); color:#fff; padding:30px 40px; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.3); z-index:1000; text-align:center; font-family:inherit;">
+    <p style="margin:0; font-size:1.2em;">&#10004; Thank you for your enquiry!</p>
+    <p style="margin:8px 0 0; font-size:0.9em; opacity:0.8;">I\'ll review your requirements and get back to you as soon as possible.</p>
+  </div>
+</section>
 
 <footer>
   <div class="footer-logo">
@@ -1102,6 +1019,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 </footer>
 
 <script>
+// ===== HERO SLIDER =====
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 const indicators = document.querySelectorAll('.indicator');
@@ -1128,6 +1046,7 @@ function resetInterval() {
 
 slideInterval = setInterval(nextSlide, 6000);
 
+// ===== NAVBAR SCROLL EFFECT =====
 window.addEventListener('scroll', () => {
   const navbar = document.getElementById('navbar');
   if (window.scrollY > 100) {
@@ -1137,6 +1056,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// ===== LAZY LOAD ANIMATIONS =====
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -1149,6 +1069,7 @@ document.querySelectorAll('.lazy-load').forEach(el => {
   observer.observe(el);
 });
 
+// ===== SMOOTH SCROLL NAVIGATION =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -1158,7 +1079,59 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// ===== CONTACT FORM HANDLER =====
+(function() {
+  var form = document.getElementById('contact-form');
+  var button = document.getElementById('submit-btn');
+  
+  if (!form || !button) {
+    console.error('Form or button not found');
+    return;
+  }
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    button.disabled = true;
+    button.textContent = 'Sending...';
+    
+    var data = new FormData(form);
+    
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      button.disabled = false;
+      button.textContent = 'Send Message';
+      
+      if (response.ok) {
+        var popup = document.getElementById('thank-you-popup');
+        popup.style.display = 'block';
+        form.reset();
+        setTimeout(function() {
+          popup.style.display = 'none';
+        }, 3000);
+      } else {
+        alert('Server error ' + response.status + '. Please try again or email directly.');
+      }
+    }).catch(function(error) {
+      console.error('Fetch failed:', error);
+      button.disabled = false;
+      button.textContent = 'Send Message';
+      alert('Connection failed. Please email carl@cjaerialperspective.co.uk directly.');
+    });
+  });
+})();
 </script>
 
 </body>
-</html>
+</html>'''
+
+with open('/mnt/agents/output/index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("File saved successfully")
+print(f"File size: {len(html_content)} characters")
