@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -177,7 +178,7 @@ nav.scrolled {
   font-size: 1rem;
   opacity: 0.9;
   margin-top: 1rem;
-  max-width: 500px;
+  max-width: 450px;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -251,7 +252,7 @@ nav.scrolled {
 .credentials {
   background: var(--navy);
   color: var(--white);
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   text-align: center;
   border-top: 1px solid rgba(255,255,255,0.06);
 }
@@ -262,11 +263,11 @@ nav.scrolled {
 }
 
 .credentials h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   color: var(--white);
 }
 
@@ -281,8 +282,8 @@ nav.scrolled {
 }
 
 .credentials ul li {
-  padding: 0.8rem 1rem;
-  font-size: 0.85rem;
+  padding: 1.2rem 1.5rem;
+  font-size: 0.9rem;
   font-weight: 400;
   letter-spacing: 1px;
   border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -497,62 +498,153 @@ section {
   margin-bottom: 1.5rem;
 }
 
-/* REPORT GALLERY - NEW LAYOUT */
-.report-gallery {
-  max-width: 1200px;
-  margin: 0 auto 3rem;
-}
-
-.report-gallery-fullwidth {
-  margin-bottom: 1.5rem;
-}
-
-.report-gallery-fullwidth .report-gallery-item {
-  aspect-ratio: 16/9;
-}
-
-.report-gallery-a4 {
+.report-structure {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.report-gallery-a4 .report-gallery-item {
-  aspect-ratio: 3/4;
+.report-preview {
+  background: var(--white);
+  border: 1px solid #ddd;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
 }
 
-.report-gallery-item {
-  position: relative;
-  overflow: hidden;
-  background: var(--navy);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-}
-
-.report-gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  transition: transform 0.6s ease, opacity 0.3s;
-  opacity: 0.95;
-}
-
-.report-gallery-item:hover img {
-  transform: scale(1.03);
-  opacity: 0.85;
-}
-
-.report-gallery-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1.5rem 1rem 1rem;
-  background: linear-gradient(to top, rgba(13,27,42,0.85) 0%, transparent 100%);
-  color: var(--white);
-  font-size: 0.75rem;
-  letter-spacing: 1.5px;
+.report-preview h3 {
+  font-size: 0.8rem;
   text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.report-preview ul {
+  list-style: none;
+  padding: 0;
+}
+
+.report-preview ul li {
+  padding: 0.8rem 0;
+  font-size: 0.95rem;
+  color: var(--navy-light);
+  border-bottom: 1px solid var(--light-gray);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.report-preview ul li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--navy);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.report-preview ul li:last-child {
+  border-bottom: none;
+}
+
+.report-finding {
+  background: var(--white);
+  border: 1px solid #ddd;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.report-finding h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.finding-item {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.finding-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.finding-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.severity {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+.severity.attention {
+  background: rgba(200, 160, 60, 0.15);
+  color: #c8a03c;
+}
+
+.severity.defect {
+  background: rgba(180, 80, 60, 0.15);
+  color: #b4503c;
+}
+
+.severity.monitor {
+  background: rgba(100, 140, 180, 0.15);
+  color: #648cb4;
+}
+
+.finding-ref {
+  font-size: 0.75rem;
+  color: var(--gray);
+  letter-spacing: 1px;
+}
+
+.finding-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.finding-desc {
+  font-size: 0.9rem;
+  color: var(--navy-light);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.finding-rec {
+  font-size: 0.85rem;
+  color: var(--gray);
+  font-style: italic;
+}
+
+.report-cta {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.report-cta p {
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+  font-style: italic;
 }
 
 /* PORTFOLIO */
@@ -830,10 +922,6 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .report-gallery-a4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   footer {
     flex-direction: column;
     gap: 2rem;
@@ -845,13 +933,13 @@ footer {
   }
 
   .credentials h2 {
-    font-size: 0.9rem;
-    letter-spacing: 1.5px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
   }
 
   .credentials ul li {
-    font-size: 0.8rem;
-    padding: 0.7rem 0.8rem;
+    font-size: 0.85rem;
+    padding: 1rem;
   }
 }
 
@@ -891,27 +979,22 @@ footer {
   </div>
 
   <div class="slide">
+    <div class="slide-bg" style="background-image: url('images/church-hero2.jpg');"></div>
+    <div class="slide-overlay"></div>
+  </div>
+
+  <div class="slide">
+    <div class="slide-bg" style="background-image: url('images/church-hero3.jpg');"></div>
+    <div class="slide-overlay"></div>
+  </div>
+
+  <div class="slide">
+    <div class="slide-bg" style="background-image: url('images/church-hero4.jpg');"></div>
+    <div class="slide-overlay"></div>
+  </div>
+
+  <div class="slide">
     <div class="slide-bg" style="background-image: url('images/church-hero5.jpg');"></div>
-    <div class="slide-overlay"></div>
-  </div>
-
-  <div class="slide">
-    <div class="slide-bg" style="background-image: url('images/Perevail_roof_angled.jpg');"></div>
-    <div class="slide-overlay"></div>
-  </div>
-
-  <div class="slide">
-    <div class="slide-bg" style="background-image: url('images/Perevail_hero.jpg');"></div>
-    <div class="slide-overlay"></div>
-  </div>
-
-  <div class="slide">
-    <div class="slide-bg" style="background-image: url('images/Rimbury.jpg');"></div>
-    <div class="slide-overlay"></div>
-  </div>
-
-  <div class="slide">
-    <div class="slide-bg" style="background-image: url('images/Slades_hero.jpg');"></div>
     <div class="slide-overlay"></div>
   </div>
 
@@ -925,7 +1008,7 @@ footer {
       </svg>
     </div>
    <p class="tagline">Drone-Based Roof Inspections & Property Reporting</p>
-   <p class="hero-sub">Structured aerial inspection reports for roof condition, property documentation, and maintenance support across Dorset. Professional drone photography and video for sales, marketing, and social media.
+   <p class="hero-sub">Structured aerial inspection reports for roof condition, property documentation, and maintenance support across Dorset.
    </p>
 
    <p class="hero-cred">&pound;5M Public Liability Insurance &bull; CAA A2 CofC Certified &bull; CAA Registered Operator
@@ -941,7 +1024,6 @@ footer {
     <div class="indicator" onclick="goToSlide(2)"></div>
     <div class="indicator" onclick="goToSlide(3)"></div>
     <div class="indicator" onclick="goToSlide(4)"></div>
-    <div class="indicator" onclick="goToSlide(5)"></div>
   </div>
 </div>
 
@@ -949,16 +1031,13 @@ footer {
 <section class="credentials">
   <div class="credentials-container">
     <h2>Fully Certified &amp; Insured Drone Operator</h2>
-    <div style="display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;">
-      <img src="images/UAV_Pilot_Badge.png" alt="A2 CofC Certified Remote Pilot Badge" style="width:90px;height:auto;opacity:0.9;border-radius:50%;border:2px solid rgba(255,255,255,0.3);padding:4px;">
-      <ul style="text-align:left;margin:0;max-width:380px;">
-        <li>CAA A2 Certificate of Competency (A2 CofC)</li>
-        <li>CAA Compliant Remote Pilot Operations</li>
-        <li>FPV UK Insurance Cover</li>
-        <li>Commercial Liability Insurance &ndash; &pound;5M Cover</li>
-        <li>UAVHub Certified Drone Pilot (Verified)</li>
-      </ul>
-    </div>
+    <ul>
+      <li>CAA A2 Certificate of Competency (A2 CofC)</li>
+      <li>CAA Compliant Remote Pilot Operations</li>
+      <li>FPV UK Insurance Cover</li>
+      <li>Commercial Liability Insurance &ndash; &pound;5M Cover</li>
+      <li>UAVHub Certified Drone Pilot (Verified)</li>
+    </ul>
   </div>
 </section>
 
@@ -984,7 +1063,7 @@ footer {
 
       <div class="about-areas">
         <h4>Common Applications</h4>
-        <p>Pre-sale property checks &bull; Landlord condition reporting &bull; Maintenance planning &bull; Contractor support &bull; Post-repair verification &bull; Professional photography &amp; video for sales and social media</p>
+        <p>Pre-sale property checks &bull; Landlord condition reporting &bull; Maintenance planning &bull; Contractor support &bull; Post-repair verification</p>
       </div>
 
       <p class="trust-line">Working with local estate agents and property professionals across Dorset.</p>
@@ -1024,7 +1103,7 @@ footer {
     <div class="service-card">
       <span class="service-number">02</span>
       <h3>Residential Property Marketing</h3>
-      <p>Professional videography and photography in 4K resolution for estate agents, private sellers, and luxury property marketing across Dorset&apos;s premium locations including Sandbanks and the Purbecks.</p>
+      <p>Aerial photography for estate agents, private sellers, and luxury property marketing across Dorset&apos;s premium locations including Sandbanks and the Purbecks.</p>
     </div>
 
     <div class="service-card">
@@ -1051,42 +1130,60 @@ footer {
   </div>
 
   <div class="report-intro">
-    <p>Every report includes full 4K photography, professionally compiled into a detailed visual report with annotated findings, close-up evidence, and contractor-ready recommendations.</p>
+    <p>This is a real inspection of my own property&mdash;conducted to demonstrate the depth and clarity of reporting you can expect. Every finding is photographed, referenced, and actionable.</p>
+    <p>The full report includes overview imagery, detailed findings with close-up photography, and a complete photographic record for contractor quotes and insurance documentation.</p>
   </div>
 
-  <!-- REPORT GALLERY -->
-  <div class="report-gallery">
-    <div class="report-gallery-fullwidth">
-      <div class="report-gallery-item">
-        <img src="images/RoofOverviewAnnotated.jpg" alt="Annotated roof overview with defect markers" loading="lazy">
-        <div class="report-gallery-caption">Annotated Overview</div>
-      </div>
+  <div class="report-structure">
+    <div class="report-preview">
+      <h3>Report Structure</h3>
+      <ul>
+        <li>Property overview &amp; scope of inspection</li>
+        <li>Key findings at a glance (priority view)</li>
+        <li>Detailed findings with reference codes</li>
+        <li>Photographic evidence &amp; close-up detail</li>
+        <li>Contractor-ready recommendations</li>
+        <li>Full disclaimer &amp; limitation notes</li>
+      </ul>
     </div>
-    <div class="report-gallery-a4">
-      <div class="report-gallery-item">
-        <img src="images/1.png" alt="Roof inspection report cover" loading="lazy">
-        <div class="report-gallery-caption">Report Cover</div>
+
+    <div class="report-finding">
+      <h3>Example Findings</h3>
+
+      <div class="finding-item">
+        <div class="finding-header">
+          <span class="severity attention">Attention</span>
+          <span class="finding-ref">Ref: A1</span>
+        </div>
+        <div class="finding-title">Aerial Strap Failure</div>
+        <div class="finding-desc">Strap securing aerial to chimney has failed, causing aerial to lean. This is the initiating defect driving secondary issues including bird soiling on solar panels.</div>
+        <div class="finding-rec">Re-secure bracket fixings and inspect chimney mortar bedding.</div>
       </div>
-      <div class="report-gallery-item">
-        <img src="images/3.png" alt="Cracked roof tile close-up" loading="lazy">
-        <div class="report-gallery-caption">Defect Detail</div>
+
+      <div class="finding-item">
+        <div class="finding-header">
+          <span class="severity defect">Defect</span>
+          <span class="finding-ref">Ref: R1</span>
+        </div>
+        <div class="finding-title">Cracked &amp; Missing Tile</div>
+        <div class="finding-desc">Half tile missing on visible pitch. Weather ingress risk. Not visible from ground level due to roof angle.</div>
+        <div class="finding-rec">Replace missing tile within 6 months. Inspect underlying felt for damage.</div>
       </div>
-      <div class="report-gallery-item">
-        <img src="images/4.png" alt="Chimney aerial bracket condition" loading="lazy">
-        <div class="report-gallery-caption">Aerial Bracket</div>
-      </div>
-      <div class="report-gallery-item">
-        <img src="images/5.png" alt="Solar panel bird fouling" loading="lazy">
-        <div class="report-gallery-caption">Solar Panel Fouling</div>
-      </div>
-      <div class="report-gallery-item">
-        <img src="images/6.png" alt="Broken roof tile detail" loading="lazy">
-        <div class="report-gallery-caption">Broken Tile</div>
+
+      <div class="finding-item">
+        <div class="finding-header">
+          <span class="severity monitor">Monitor</span>
+          <span class="finding-ref">Ref: R2</span>
+        </div>
+        <div class="finding-title">Moss Accumulation</div>
+        <div class="finding-desc">Extensive moss build-up on tiles and ridge caps. Extent greater than visible from ground. Retains moisture and accelerates tile degradation.</div>
+        <div class="finding-rec">Plan professional moss removal and treatment programme.</div>
       </div>
     </div>
   </div>
 
-  <div class="report-cta" style="text-align:center;margin-top:3rem;">
+  <div class="report-cta">
+    <p>Full sample report available on request&mdash;including all photographic evidence and detailed contractor recommendations.</p>
     <a href="mailto:carl@cjaerialperspective.co.uk?subject=Sample%20Report%20Request" class="cta-button">Request Full Sample Report</a>
   </div>
 </section>
@@ -1099,65 +1196,56 @@ footer {
 
   <div class="portfolio-grid">
     <div class="portfolio-item">
-      <img src="images/Perevail_hero.jpg" alt="Perevail aerial view" loading="lazy">
+      <img src="images/DJI_0046-hdr.jpg" alt="Skylight curb seal inspection" loading="lazy">
       <div class="portfolio-overlay">
         <span>
-          <span class="caption-main">Perevail</span>
-          <span class="caption-sub">Aerial Overview</span>
+          <span class="caption-main">Skylight Curb Inspection</span>
+          <span class="caption-sub">Seal deterioration &amp; membrane stress visible</span>
         </span>
       </div>
     </div>
     <div class="portfolio-item">
-      <img src="images/Perevail_roof_angled.jpg" alt="Perevail angled roof detail" loading="lazy">
+      <img src="images/DJI_0031-hdr.jpg" alt="Full roof survey overview" loading="lazy">
       <div class="portfolio-overlay">
         <span>
-          <span class="caption-main">Perevail</span>
-          <span class="caption-sub">Roof Detail</span>
+          <span class="caption-main">Full Roof Survey</span>
+          <span class="caption-sub">Context + detail in single documentation pass</span>
         </span>
       </div>
     </div>
     <div class="portfolio-item">
-      <img src="images/RoofOverviewAnnotated.jpg" alt="Annotated roof overview" loading="lazy">
+      <img src="images/church-hero1.jpg" alt="Heritage property aerial" loading="lazy">
       <div class="portfolio-overlay">
         <span>
-          <span class="caption-main">Roof Survey</span>
-          <span class="caption-sub">Annotated Overview</span>
+          <span class="caption-main">Heritage Property</span>
+          <span class="caption-sub">High-value residential documentation</span>
         </span>
       </div>
     </div>
     <div class="portfolio-item">
-      <img src="images/Slades_hero.jpg" alt="Slades Park Pavilion aerial view" loading="lazy">
+      <img src="images/church-hero2.jpg" alt="Dorset aerial photography" loading="lazy">
       <div class="portfolio-overlay">
         <span>
-          <span class="caption-main">Slades Park Pavilion</span>
-          <span class="caption-sub">Aerial Overview</span>
+          <span class="caption-main">Coastal Architecture</span>
+          <span class="caption-sub">Dorset premium locations</span>
         </span>
       </div>
     </div>
     <div class="portfolio-item">
-      <img src="images/Rimbury.jpg" alt="Rimbury aerial view" loading="lazy">
+      <img src="images/church-hero3.jpg" alt="Property aerial view" loading="lazy">
       <div class="portfolio-overlay">
         <span>
-          <span class="caption-main">Residential</span>
-          <span class="caption-sub">Aerial Photography</span>
+          <span class="caption-main">Estate Marketing</span>
+          <span class="caption-sub">Context shots for listings</span>
         </span>
       </div>
     </div>
     <div class="portfolio-item">
-      <img src="images/Slades_skylight.jpg" alt="Slades Park skylight close-up" loading="lazy">
+      <img src="images/church-hero4.jpg" alt="Commercial property drone" loading="lazy">
       <div class="portfolio-overlay">
         <span>
-          <span class="caption-main">Slades Park Pavilion</span>
-          <span class="caption-sub">Skylight Detail</span>
-        </span>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <img src="images/church-hero4.jpg" alt="Heritage aerial photography" loading="lazy">
-      <div class="portfolio-overlay">
-        <span>
-          <span class="caption-main">Heritage &amp; Architecture</span>
-          <span class="caption-sub">Aerial Photography</span>
+          <span class="caption-main">Commercial Portfolio</span>
+          <span class="caption-sub">Development &amp; planning documentation</span>
         </span>
       </div>
     </div>
@@ -1370,11 +1458,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 </script>
 
 </body>
-</html>'''
-
-# Save to output
-with open('/mnt/agents/output/index.html', 'w') as f:
-    f.write(full_html)
-
-print("Full HTML saved successfully!")
-print(f"File size: {len(full_html)} characters")
+</html>
