@@ -1371,10 +1371,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 </body>
 </html>'''
-
-# Save to output
-with open('/mnt/agents/output/index.html', 'w') as f:
-    f.write(full_html)
-
-print("Full HTML saved successfully!")
-print(f"File size: {len(full_html)} characters")
