@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CJ Aerial Perspective | Aerial Roof Surveys & Property Insight</title>
-<meta name="description" content="Aerial roof surveys and property documentation across Dorset. Supporting estate agents, landlords, and property professionals with clear, contractor-aware aerial reporting.">
+<title>CJ Aerial Perspective | Professional Aerial Photography & Property Imaging</title>
+<meta name="description" content="Professional drone photography, 4K aerial video and property imaging across Dorset. For estate agents, property professionals, businesses and private clients.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -212,7 +212,7 @@ nav.scrolled {
   width: 2px;
   height: 40px;
   background: rgba(255,255,255,0.2);
-  cursor: pointer;
+  
   transition: all 0.3s;
 }
 
@@ -566,7 +566,7 @@ section {
   position: relative;
   aspect-ratio: 4/3;
   overflow: hidden;
-  cursor: pointer;
+  
   background: var(--navy);
 }
 
@@ -744,7 +744,7 @@ section {
   border: none;
   font-family: inherit;
   font-weight: 600;
-  cursor: pointer;
+  
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: opacity 0.3s;
@@ -879,7 +879,109 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* WORKING WITH */
+.working-with {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: var(--white);
+}
+
+.working-with-label {
+  font-size: 0.75rem;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.client-badge {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.client-badge img {
+  width: 155px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.client-badge:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* WHY AERIAL */
+.why-aerial {
+  background: var(--white);
+  max-width: 100%;
+  padding: 7rem 2rem;
+}
+
+.why-aerial .section-header h2 {
+  color: var(--navy);
+}
+
+.why-aerial .section-line {
+  background: var(--navy);
+}
+
+.why-intro {
+  max-width: 700px;
+  margin-bottom: 4rem;
+}
+
+.why-intro p {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: var(--navy-light);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-item {
+  text-align: left;
+}
+
+.why-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--navy);
+}
+
+.why-item p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--navy-light);
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .client-badge img {
+    width: 135px;
+  }
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 </style>
+<base target="_blank">
 <base target="_blank">
 </head>
 
@@ -937,8 +1039,8 @@ footer {
         <text x="290" y="100" text-anchor="middle" fill="white" font-family="Montserrat" font-weight="400" font-size="20" letter-spacing="6" opacity="0.9">PERSPECTIVE</text>
       </svg>
     </div>
-   <p class="tagline">Drone-Based Roof Inspections & Property Reporting</p>
-   <p class="hero-sub">Structured aerial inspection reports for roof condition, property documentation, and maintenance support across Dorset. Professional drone photography and video for sales, marketing, and social media.
+   <p class="tagline">Professional Aerial Photography & Property Imaging</p>
+   <p class="hero-sub">Professional drone photography and 4K aerial video for property marketing, commercial projects and visual documentation across Dorset. Roof surveys and inspection imagery are also available where required.
    </p>
 
    <p class="hero-cred">&pound;5M Public Liability Insurance &bull; CAA A2 CofC Certified &bull; CAA Registered Operator
@@ -961,7 +1063,7 @@ footer {
 <!-- CREDENTIALS -->
 <section class="credentials">
   <div class="credentials-container">
-    <h2>Fully Certified &amp; Insured Drone Operator</h2>
+    <h2>Professional, Certified &amp; Insured Drone Operator</h2>
     <div style="display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;">
       <img src="images/UAV_Pilot_Badge.png" alt="A2 CofC Certified Remote Pilot Badge" style="width:90px;height:auto;opacity:0.9;border-radius:50%;border:2px solid rgba(255,255,255,0.3);padding:4px;">
       <ul style="text-align:left;margin:0;max-width:380px;">
@@ -976,7 +1078,7 @@ footer {
 </section>
 
 <div class="cta-bar">
-  <a href="mailto:carl@cjaerialperspective.co.uk" class="cta-button">Discuss a Property or Project</a>
+  <a href="mailto:carl@cjaerialperspective.co.uk" class="cta-button">Request Aerial Property Imaging</a>
 </div>
 
 <section id="about" class="lazy-load">
@@ -987,17 +1089,19 @@ footer {
 
   <div class="about-content">
     <div class="about-text">
-      <p>CJ Aerial Perspective is operated by Carl Jones, providing drone-based roof inspections and property imaging across Dorset.</p>
+      <p>CJ Aerial Perspective is operated by Carl Jones, providing professional drone photography, 4K aerial video and property imaging across Dorset.</p>
 
-      <p>The focus is the production of clear, structured visual evidence for use in property reporting, including inventories, pre-sale condition assessments, and maintenance documentation.</p>
+      <p>Working with estate agents, property professionals, businesses and private clients, I provide straightforward aerial imagery for property marketing, documentation and visual communication.</p>
 
-      <p>With a background in inventory and property reporting, I interpret aerial imagery in a practical context &mdash; highlighting relevant observations, visible areas of concern, and presenting findings in a format that landlords, estate agents, and contractors can act on.</p>
+      <p>Alongside property marketing, I provide aerial roof imagery and structured visual documentation to support inventories, maintenance planning and contractor discussions.</p>
 
-      <p>All operations are conducted in accordance with CAA requirements and appropriate insurance cover.</p>
+      <p>With a background in inventory and property reporting, I understand how property information needs to be presented and used in a practical context.</p>
+
+      <p>All operations are conducted in accordance with applicable CAA requirements and appropriate insurance cover.</p>
 
       <div class="about-areas">
-        <h4>Common Applications</h4>
-        <p>Pre-sale property checks &bull; Landlord condition reporting &bull; Maintenance planning &bull; Contractor support &bull; Post-repair verification &bull; Professional photography &amp; video for sales and social media</p>
+        <h4>What We Provide</h4>
+        <p>Property marketing &bull; Estate agency photography &bull; Commercial property &bull; Holiday lets &bull; Aerial video &bull; Property documentation &bull; Roof imagery &bull; Maintenance planning</p>
       </div>
 
       <p class="trust-line">Working with local estate agents and property professionals across Dorset.</p>
@@ -1020,6 +1124,14 @@ footer {
   </div>
 </section>
 
+<!-- WORKING WITH Q SALES & LETTINGS -->
+<section class="working-with">
+  <p class="working-with-label">Working with Q Sales &amp; Lettings</p>
+  <a href="https://www.qsaleslettings.co.uk/" target="_blank" rel="noopener noreferrer" class="client-badge">
+    <img src="images/Qsaleslogo.webp" alt="Q Sales &amp; Lettings">
+  </a>
+</section>
+
 <section id="services" class="services lazy-load">
   <div class="section-header">
     <h2>Services</h2>
@@ -1029,42 +1141,42 @@ footer {
   <div class="services-grid">
     <div class="service-card">
       <span class="service-number">01</span>
-      <h3>Roof Surveys for Inventory &amp; Property Reports</h3>
-      <p>Scaffold-free condition documentation. Clear, high-resolution imagery of roof coverings, flashing, skylights, and drainage&mdash;delivered in formats that support your existing reports and contractor discussions.</p>
-      <p class="service-tag">No scaffolding. No disruption. No guesswork.</p>
+      <h3>Residential Property Marketing</h3>
+      <p>Professional aerial photography and 4K video for estate agents, private sellers and property marketers. High-quality imagery designed for property listings, websites, social media and promotional material.</p>
     </div>
 
     <div class="service-card">
       <span class="service-number">02</span>
-      <h3>Residential Property Marketing</h3>
-      <p>Professional videography and photography in 4K resolution for estate agents, private sellers, and luxury property marketing across Dorset&apos;s premium locations including Sandbanks and the Purbecks.</p>
+      <h3>Commercial Property</h3>
+      <p>Aerial photography and video for commercial premises, developments, businesses and property portfolios. Suitable for marketing, documentation and general visual presentation.</p>
     </div>
 
     <div class="service-card">
       <span class="service-number">03</span>
-      <h3>Commercial Property</h3>
-      <p>Office buildings, retail spaces, development sites, and commercial portfolio photography for marketing, documentation, and planning applications.</p>
+      <h3>Roof Surveys &amp; Inspection</h3>
+      <p>Scaffold-free aerial imagery supporting inventories, maintenance planning, condition documentation and contractor discussions. Clear views of roof coverings, flashing, skylights, drainage and other visible areas.</p>
+      <p class="service-tag">No scaffolding. No disruption. Clearer visibility.</p>
     </div>
 
     <div class="service-card">
       <span class="service-number">04</span>
-      <h3>Custom Projects</h3>
-      <p>Bespoke aerial solutions tailored to specific requirements. Contact me to discuss your unique project needs and technical specifications.</p>
+      <h3>Bespoke Aerial Projects</h3>
+      <p>Bespoke aerial photography, video and documentation tailored to individual requirements. Contact me to discuss your unique project needs.</p>
     </div>
   </div>
 
-  <p class="compliance-note">Flights conducted in accordance with current CAA regulations and operational permissions.</p>
+  <p class="compliance-note">Flights conducted in accordance with applicable CAA regulations and operational requirements.</p>
 </section>
 
 <!-- SAMPLE REPORT -->
 <section id="report" class="sample-report lazy-load">
   <div class="section-header">
-    <h2>Sample Report</h2>
+    <h2>Sample Roof Inspection Report</h2>
     <div class="section-line"></div>
   </div>
 
   <div class="report-intro">
-    <p>Every report includes full 4K photography, professionally compiled into a detailed visual report with annotated findings, close-up evidence, and contractor-ready recommendations.</p>
+    <p>Aerial imagery can be compiled into a structured visual report with annotated observations, close-up evidence and clear documentation to support maintenance discussions and contractor assessment.</p>
   </div>
 
   <!-- REPORT GALLERY -->
@@ -1104,6 +1216,34 @@ footer {
   </div>
 </section>
 
+
+<!-- WHY AERIAL -->
+<section class="why-aerial lazy-load">
+  <div class="section-header">
+    <h2>Why Aerial?</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="why-intro">
+    <p>Aerial imagery gives property professionals a perspective that conventional photography cannot. From presenting a property at its best to documenting areas that are difficult or unsafe to access, drone photography provides a clear additional view of the property.</p>
+  </div>
+
+  <div class="why-grid">
+    <div class="why-item">
+      <h4>Marketing</h4>
+      <p>Stand out in property listings and social media.</p>
+    </div>
+    <div class="why-item">
+      <h4>Documentation</h4>
+      <p>Capture roofs, elevations and external areas clearly.</p>
+    </div>
+    <div class="why-item">
+      <h4>Perspective</h4>
+      <p>Show the property, surroundings and setting from above.</p>
+    </div>
+  </div>
+</section>
+
 <section id="portfolio" class="lazy-load">
   <div class="section-header">
     <h2>Portfolio</h2>
@@ -1112,7 +1252,7 @@ footer {
 
   <div class="portfolio-grid">
     <div class="portfolio-item">
-      <img src="images/Peveril_hero.jpg" alt="Peveril aerial view" loading="lazy">
+      <img src="images/Peveril_hero.jpg" alt="Peveril House aerial view" loading="lazy">
       <div class="portfolio-overlay">
         <span>
           <span class="caption-main">Peveril House</span>
@@ -1121,20 +1261,11 @@ footer {
       </div>
     </div>
     <div class="portfolio-item">
-      <img src="images/Peveril_roof_angled.JPG" alt="Peveril angled roof detail" loading="lazy">
+      <img src="images/Peveril_roof_angled.JPG" alt="Peveril roof detail" loading="lazy">
       <div class="portfolio-overlay">
         <span>
-          <span class="caption-main">Peveril Aerial</span>
+          <span class="caption-main">Peveril</span>
           <span class="caption-sub">Roof Detail</span>
-        </span>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <img src="images/RoofOverviewAnnotated.jpg" alt="Annotated roof overview" loading="lazy">
-      <div class="portfolio-overlay">
-        <span>
-          <span class="caption-main">Roof Survey</span>
-          <span class="caption-sub">Annotated Overview</span>
         </span>
       </div>
     </div>
@@ -1148,7 +1279,7 @@ footer {
       </div>
     </div>
     <div class="portfolio-item">
-      <img src="images/Metropoliton_Hero.jpg" alt="Metropoliton aerial view" loading="lazy">
+      <img src="images/Metropoliton_Hero.jpg" alt="Metropoliton Poole" loading="lazy">
       <div class="portfolio-overlay">
         <span>
           <span class="caption-main">Metropoliton Poole</span>
@@ -1157,7 +1288,25 @@ footer {
       </div>
     </div>
     <div class="portfolio-item">
-      <img src="images/Slades_skylight.jpg" alt="Slades Park skylight close-up" loading="lazy">
+      <img src="images/danecourtrd.jpg" alt="Dane Court Road property" loading="lazy">
+      <div class="portfolio-overlay">
+        <span>
+          <span class="caption-main">Dane Court Road</span>
+          <span class="caption-sub">Property Hero</span>
+        </span>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <img src="images/churchillrd.jpg" alt="Churchill Road property" loading="lazy">
+      <div class="portfolio-overlay">
+        <span>
+          <span class="caption-main">Churchill Road</span>
+          <span class="caption-sub">Property Hero</span>
+        </span>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <img src="images/Slades_skylight.jpg" alt="Slades Park Pavilion skylight" loading="lazy">
       <div class="portfolio-overlay">
         <span>
           <span class="caption-main">Slades Park Pavilion</span>
@@ -1166,11 +1315,20 @@ footer {
       </div>
     </div>
     <div class="portfolio-item">
-      <img src="images/Sandbanksferry.jpg" alt="Coastal aerial photography" loading="lazy">
+      <img src="images/Sandbanksferry.jpg" alt="Sandbanks peninsula coastal" loading="lazy">
       <div class="portfolio-overlay">
         <span>
-          <span class="caption-main">Sandbanks peninsula</span>
+          <span class="caption-main">Sandbanks Peninsula</span>
           <span class="caption-sub">Coastal Photography</span>
+        </span>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <img src="images/RoofOverviewAnnotated.jpg" alt="Annotated roof survey" loading="lazy">
+      <div class="portfolio-overlay">
+        <span>
+          <span class="caption-main">Roof Survey</span>
+          <span class="caption-sub">Annotated Overview</span>
         </span>
       </div>
     </div>
@@ -1185,7 +1343,7 @@ footer {
 
   <div class="contact-content">
     <div class="contact-info">
-      <h3>Start your project</h3>
+      <h3>Let's discuss your property</h3>
 
       <div class="contact-detail">
         <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -1202,7 +1360,7 @@ footer {
         <span>Dorset, UK</span>
       </div>
 
-      <p class="contact-trust">Already supporting inventory and property professionals across Bournemouth and Poole.</p>
+      <p class="contact-trust">Supporting estate agents, property professionals and businesses across Bournemouth, Poole and Dorset.</p>
 
       <div class="social-links">
         <a href="https://instagram.com/cjaerialperspective" aria-label="Instagram" target="_blank" rel="noopener">
@@ -1233,10 +1391,11 @@ footer {
         <input type="tel" name="phone" placeholder="Your Phone Number" required>
         <select name="service" required>
           <option value="">Select Service</option>
-          <option value="inspection">Roof Survey &amp; Inspection</option>
           <option value="residential">Residential Property Marketing</option>
           <option value="commercial">Commercial Property</option>
-          <option value="custom">Custom Project</option>
+          <option value="inspection">Roof Survey &amp; Inspection</option>
+          <option value="aerial">Aerial Photography &amp; Video</option>
+          <option value="custom">Bespoke Project</option>
         </select>
         <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
         <button type="submit" id="submit-btn">Send Message</button>
